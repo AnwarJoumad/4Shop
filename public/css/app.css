@@ -84,6 +84,15 @@ header{
 .products .form-control{
 	margin-top: 1em;
 }
+.products .product-title{
+	display: flex;
+	justify-content: space-between;
+}
+.products .product-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
 .no-link, .no-link:hover{
 	color: initial;
@@ -125,6 +134,7 @@ span.collapsing{
 
 	.product-row{
 		display: block;
+		
 	}
 
 	.product-row img{
@@ -135,9 +145,12 @@ span.collapsing{
 		width: 100%;
 		padding: 0;
 		padding-top: 1em;
+		
 	}
 
 	.cart{
 		height: 24px;
 	}
+
+	
 }

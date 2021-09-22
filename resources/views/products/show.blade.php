@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 	<div class="products">
 			<div class="product-row no-link" href="{{ route('products.show', $product) }}">
 				<img src="{{ url($product->image ?? 'img/placeholder.jpg') }}" alt="{{ $product->title }}" class="rounded">
