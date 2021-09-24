@@ -93,7 +93,9 @@ header{
 	flex-direction: column;
 	justify-content: space-between;
 }
-
+.discount{
+	color: red;
+}
 .no-link, .no-link:hover{
 	color: initial;
 	text-decoration: none;
