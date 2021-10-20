@@ -13,11 +13,15 @@
 							<p>{{ $product->description }}</p>
 						@endunless
 						<div class="discount">
-						<?php
-							if ($product->discount > 0){
-							echo "Nu 12,5% korting!";
-							}
-						?>
+						
+							@if ($product->discount > 0)
+							
+							
+							<p> Nu {{$product->discount }} % korting! Orginele prijs is {{$product->getOriginal('price')}}		</p>
+							
+							
+							@endif
+						
 						</div>
 					</div>
 					<button class="btn btn-primary">Meer info &amp; bestellen</button>
