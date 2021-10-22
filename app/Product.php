@@ -16,5 +16,9 @@ class Product extends Model
         $final_price = $value - $discount; 
         return number_format($final_price, 2); 
     }
+    public function categorys()
+    {
+        return $this->hasMany('App\Category');
+    }
 }
 
